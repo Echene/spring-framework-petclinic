@@ -52,6 +52,8 @@ public class Pet extends NamedEntity {
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date birthDate;
+	
+	private monParametre;
 
     @ManyToOne
     @JoinColumn(name = "type_id")
